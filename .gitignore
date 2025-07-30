@@ -1,0 +1,9 @@
+# Original unencrypted report
+PostWorkshopReport_Redesigned.html
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
