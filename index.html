@@ -2,7 +2,7 @@
 <html class="staticrypt-html">
     <head>
         <meta charset="utf-8" />
-        <title>AI Opportunity Discovery Report</title>
+        <title>Post-Workshop Report - AI Opportunity Discovery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- do not cache this page -->
@@ -49,18 +49,32 @@
 
             .staticrypt-page {
                 width: 100%;
-                max-width: 400px;
+                max-width: 420px;
                 margin: 0 auto;
                 padding: 2rem;
             }
 
             .staticrypt-form {
-                background: linear-gradient(135deg, #1a1a1a 0%, #0d1117 100%);
-                border: 1px solid #333;
-                border-radius: 16px;
-                padding: 3rem;
+                background: linear-gradient(145deg, #1a1a1a 0%, #111111 100%);
+                border: 1px solid rgba(139, 102, 54, 0.2);
+                border-radius: 20px;
+                padding: 3.5rem 3rem;
                 text-align: center;
-                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+                box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 
+                            0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+                backdrop-filter: blur(10px);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .staticrypt-form::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, rgba(139, 102, 54, 0.3), transparent);
             }
 
             .staticrypt-title {
@@ -124,23 +138,27 @@
 
             .staticrypt-form .staticrypt-decrypt-button {
                 text-transform: uppercase;
+                letter-spacing: 0.05em;
                 outline: 0;
-                background: #8b6636;
+                background: linear-gradient(135deg, #8b6636 0%, #7a5a2f 100%);
                 width: 100%;
                 border: 0;
-                border-radius: 8px;
-                padding: 12px 24px;
+                border-radius: 10px;
+                padding: 14px 28px;
                 color: #ffffff;
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 600;
                 cursor: pointer;
-                transition: background-color 0.15s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                box-shadow: 0 4px 12px rgba(139, 102, 54, 0.3);
             }
 
             .staticrypt-form .staticrypt-decrypt-button:hover,
             .staticrypt-form .staticrypt-decrypt-button:active,
             .staticrypt-form .staticrypt-decrypt-button:focus {
-                background: #9d7340;
+                background: linear-gradient(135deg, #9d7340 0%, #8b6636 100%);
+                transform: translateY(-1px);
+                box-shadow: 0 6px 16px rgba(139, 102, 54, 0.4);
             }
 
 
@@ -218,15 +236,13 @@
         <div id="staticrypt_content" class="staticrypt-content hidden">
             <div class="staticrypt-page">
                 <div class="staticrypt-form">
-                    <div style="text-align: center; margin-bottom: 2rem;">
-                        <img src="supertypelogo.png" alt="Supertype" style="height: 40px; margin-bottom: 1.5rem;">
-                        <div style="font-size: 0.75rem; color: #9ca3af; font-weight: 500; letter-spacing: 0.05em;">
-                            PT KAWAN SEHAT INDONESIA
-                        </div>
+                    <div style="text-align: center; margin-bottom: 2.5rem;">
+                        <img src="supertypelogo.png" alt="Supertype" style="height: 48px; margin: 0 auto; display: block;">
                     </div>
                     <div class="staticrypt-instructions">
-                        <p class="staticrypt-title">Access Required</p>
-                        <p>Please enter the password to view this report</p>
+                        <p class="staticrypt-title">Post-Workshop Report</p>
+                        <p style="font-size: 1rem; color: #e5e7eb; margin-bottom: 0.5rem;">AI Opportunity Discovery</p>
+                        <p style="font-size: 0.875rem; color: #9ca3af;">Please enter the password to access this report</p>
                     </div>
 
                     <hr class="staticrypt-hr" />
